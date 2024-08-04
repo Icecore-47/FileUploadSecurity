@@ -137,12 +137,12 @@ namespace FileUploadSecurity
             if (fileType == "MALICIOUS")
             {
 //                Log.Warning("The file is malicious. Filename: {FileName}", fileName);
-                WriteToFile(outputFilePath, $"Filename: {fileName}, Expected Result: {expectedFormat}, Actual Result: The file is malicious, Secondary Results: [{string.Join(", ", secondaryResults)}]");
+                WriteToFile(outputFilePath, $"Filename: {fileName}, Expected Result: {expectedFormat}, Actual Result: The file is malicious, Secondary Results: [{string.Join("-", secondaryResults)}]");
             }
             else
             {
 //                Log.Information("The file type is: {FileType}. Filename: {FileName}, Secondary Results: {SecondaryResults}", fileType, fileName, secondaryResults);
-                WriteToFile(outputFilePath, $"Filename: {fileName}, Expected Result: {expectedFormat}, Actual Result: The file type is: {actualResult}, Secondary Results: [{string.Join(", ", secondaryResults)}]");
+                WriteToFile(outputFilePath, $"Filename: {fileName}, Expected Result: {expectedFormat}, Actual Result: The file type is: {actualResult}, Secondary Results: [{string.Join("-", secondaryResults)}]");
             }
         }
 
