@@ -1,0 +1,2 @@
+RewriteCond %{REQUEST_METHOD} !^(HEAD|OPTIONS|POST|PUT)
+RewriteRule .* - [F]

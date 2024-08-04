@@ -1,0 +1,4 @@
+order allow,deny
+deny from 255.x.x.x
+deny from 123.x.x.x
+allow from all
